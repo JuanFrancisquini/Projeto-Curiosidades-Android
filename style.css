@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Android";
+    src: url("fontes/idroid.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "bebas";
+    src: url("fontes/BebasNeue-Regular.ttf") format("truetype");
+}
+
+
+/*Adicionar a Memória do arquivo*/
+:root{
+    --cor0: #7ad38f;
+    --cor1: #2b4e33;
+    --cor2: #bffce849;
+    --cor3: #ffffff97;
+    --cor4: #005014;
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: "bebas", cursive;
+    --fonte-android: "Android", cursive;
+}
+
+/*  Zerar Configuração Global */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header{
+    background-image: linear-gradient(180deg, var(--cor0), var(--cor1));
+    color: white;
+    font-family: "bebas";
+    padding: 1px;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.256);
+    font-weight: bold;
+}
+
+header > h1{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+header > p{
+    text-align: center;
+    padding-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.66);
+}
+
+nav{
+    padding-bottom: 2px;
+}
+
+nav > a{
+    color: black;
+    text-decoration: none;
+    padding: 3px 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    font-weight: lighter;
+    text-shadow: 0px 0px 6px rgb(255, 255, 255);
+}
+
+nav > a:hover{
+    background-color: #bffce849;
+    color: #f4ff56;
+    padding: 3px 19px;
+    border: 1px solid #ffffff97;
+    border-bottom: transparent;
+}
+
+body{
+    background-image: linear-gradient(180deg, #7ad38f, rgb(49, 65, 49));
+    background-repeat: no-repeat;
+}
+
+/*class para adicionar após o link um espaço e um emoji*/
+a.externo::after{
+    content: "\00A0\1F517";
+}
+
+main{
+    background-color: white;
+    max-width: 800px;
+    margin: auto;
+    padding: 1px 20px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.548);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 10px;
+}
+
+main > h1{
+    font-family: "Android";
+    color: #005014;
+    padding-top: 15px;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.58);
+}
+
+main > h2{
+    font-family: "Android";
+    color: #004f12;
+    background-image: linear-gradient(90deg, #6bbf9c8f, #41644900);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 2px;
+    padding-left: 9px;
+    margin-top: 5px;
+}
+
+main > p{
+    text-indent: 25px;
+    font-family: "bebas";
+    text-align: justify;
+    font-weight: 500;
+    padding: 20px 0px;
+}
+
+div.imagem{
+    margin: auto;
+    max-width: max-content;
+}
+
+div.video{
+    background-color: #31583b;
+    margin: 0px -20px 20px -20px;
+    padding: 20px;
+    padding-bottom: 56.5%;
+    position: relative;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+span{
+    color: #008b45;
+    font-weight: bold;
+}
+
+article{
+    background-color: #c8e1cf;
+    font-family: "bebas";
+    border-radius: 10px;
+    padding: 0px 10px 20px 10px;
+}
+
+article ul{
+    list-style-position: inside;
+    list-style-type: "\2714\00A0\00A0";
+    padding: 10px;
+    padding-bottom: 5px;
+    min-width: max-content;
+    display: inline-block;
+}
+
+ul.a{
+    margin-right: 40px;
+}
+
+
+div.list{
+    margin: auto;
+    max-width: max-content;
+    background-color: rgba(0, 0, 0, 0.096);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+article h3{
+    background-color: #018443;
+    text-indent: 5px;
+    padding: 5px;
+    margin: 0px -10px;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+article p{
+    text-indent: 10px;
+    padding: 20px;
+}
+
+p.final{
+    padding: 0px 20px;
+}
+
+p.center{
+    text-align: center;
+    padding: 15px;
+    text-indent: 0px;
+}
+
+p.center#a{
+    padding-top: 0px;
+}
+
+footer{
+    background-image: linear-gradient(180deg, #7ad38f, #2c4e35);
+    padding-top: 1px;
+    padding-bottom: 2px;
+    text-align: center;
+    margin: 0px;
+    font-family: "bebas";
+    font-size: 0.6em;
+    color: white;
+}
+
+footer > p{
+    margin: 0px;
+}
+
+footer > p > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
